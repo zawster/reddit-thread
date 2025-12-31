@@ -75,4 +75,3 @@ A modern, high-performance Reddit clone built with **FastAPI** (Backend) and **N
 ![User Profile](screenshots/profile.png)
 
 ---
-*Developed by Antigravity.*
