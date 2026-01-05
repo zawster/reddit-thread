@@ -7,7 +7,7 @@ A modern, high-performance Reddit clone built with **FastAPI** (Backend) and **N
 ## 🚀 Features
 
 ### Core Reddit Experience
-- **Community Management**: Create and browse subreddits (`r/technology`, `r/programming`, etc.).
+- **Community Management**: Create and browse subreddits (`r/technology`, `r/silent`, etc).
 - **Content Creation**: Post text-based content to any community.
 - **Recursive Nested Comments**: Infinite-level deep comment threads using PostgreSQL recursive logic.
 - **Idempotent Voting**: Standard Reddit-style upvote/downvote system with score calculation.
@@ -51,12 +51,12 @@ A modern, high-performance Reddit clone built with **FastAPI** (Backend) and **N
 
 2. **Start the services**:
    ```bash
-   docker-compose up -d --build
+   docker compose up -d --build
    ```
 
 3. **Seed initial data** (Admin user and default subreddits):
    ```bash
-   docker-compose exec backend python seed.py
+   docker compose exec backend python seed.py
    ```
 
 4. **Access the application**:
