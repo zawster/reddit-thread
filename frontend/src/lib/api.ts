@@ -1,3 +1,10 @@
+/**
+ * Axios API Client Configuration
+ *
+ * This module sets up the axios instance with interceptors for
+ * authentication and error handling across the application.
+ */
+
 import axios from 'axios';
 
 const api = axios.create({
@@ -14,17 +21,23 @@ api.interceptors.request.use(
         if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }
+        console.log(`[API Request] ${config.method?.toUpperCase()} ${config.url}`);
         return config;
     },
     (error) => {
+        console.error('[API Request Error]', error.message);
         return Promise.reject(error);
     }
 );
 
 // Response interceptor to handle errors
 api.interceptors.response.use(
-    (response) => response,
+    (response) => {
+        console.log(`[API Response] ${response.status} ${response.config.url}`);
+        return response;
+    },
     (error) => {
+        console.error(`[API Error] ${error.response?.status || 'Network Error'} ${error.config?.url}`);
         if (error.response?.status === 401) {
             // Only clear token if it exists (prevents infinite loops if /me is called without token)
             if (localStorage.getItem('token')) {
