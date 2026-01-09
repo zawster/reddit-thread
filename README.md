@@ -75,3 +75,62 @@ A modern, high-performance Reddit clone built with **FastAPI** (Backend) and **N
 ![User Profile](screenshots/profile.png)
 
 ---
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+### How to Contribute
+
+1. **Fork the repository**
+   - Click the "Fork" button at the top right of this repository.
+
+2. **Clone your fork**
+   ```bash
+   git clone https://github.com/your-username/reddit-thread.git
+   cd reddit-thread
+   ```
+
+3. **Create a new branch**
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+   Use a descriptive branch name (e.g., `feature/add-dark-mode`, `fix/comment-bug`).
+
+4. **Make your changes**
+   - Write clean, readable code.
+   - Follow existing code style and conventions.
+   - Test your changes locally.
+
+5. **Commit your changes**
+   ```bash
+   git add .
+   git commit -m "Add: brief description of your changes"
+   ```
+   Use clear commit messages (e.g., `Add: user avatar upload`, `Fix: nested comment rendering`).
+
+6. **Push to your fork**
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+7. **Open a Pull Request**
+   - Go to the original repository and click "New Pull Request".
+   - Select your branch and provide a clear description of your changes.
+   - Link any related issues if applicable.
+
+### Guidelines
+
+- Ensure your code follows the project's coding standards.
+- Update documentation if you're adding new features.
+- Make sure all existing tests pass before submitting.
+- Keep pull requests focused on a single feature or fix.
+
+### Reporting Issues
+
+If you find a bug or have a feature request, please open an issue with:
+- A clear title and description.
+- Steps to reproduce (for bugs).
+- Expected vs actual behavior.
+
+---
